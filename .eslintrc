@@ -7,6 +7,17 @@
     "document": true
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "import/no-unresolved": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0
+  },
+  "settings": {
+    "import/resover": {
+      "node": {
+        "paths": ["./src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

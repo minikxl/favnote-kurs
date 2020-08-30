@@ -3,19 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-knobs": "^6.0.20",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "eslint": "^6.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -30,6 +34,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-actions": "^6.0.20",
+    "@storybook/addon-essentials": "^6.0.20",
+    "@storybook/addon-links": "^6.0.20",
+    "@storybook/node-logger": "^6.0.20",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.20",
+    "babel-loader": "^8.1.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
@@ -38,7 +50,8 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-is": "^16.13.1"
   },
   "husky": {
     "hooks": {
